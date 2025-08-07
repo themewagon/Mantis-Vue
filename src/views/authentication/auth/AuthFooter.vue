@@ -14,20 +14,21 @@ const footerLink = shallowRef([
 ]);
 </script>
 <template>
-  <v-footer class="px-0 pt-2">
+  <v-footer class="px-0 pt-2 z-100" style="z-index: 201; position: relative">
     <v-row justify="center" no-gutters>
       <v-col cols="12" md="6" class="text-md-left text-center">
         <p class="text-subtitle-2 text-lightText mb-md-0 mb-4">
           This site is protected by
-          <a href="/" class="text-primary">Privacy Policy</a>
+          <span class="text-primary">Privacy Policy</span>. Distributed by
+          <a href="https://themewagon.com" target="_blank" rel="noopener noreferrer" class="cursor-pointer text-primary"> ThemeWagon </a>
         </p>
       </v-col>
       <v-col class="d-flex flex-md-row flex-column justify-md-end align-center" cols="12" md="6">
         <a
+          onclick="{}"
           v-for="(item, i) in footerLink"
           :key="i"
-          class="mx-md-3 mx-2 mb-md-0 mb-2 text-subtitle-2 text-lightText"
-          href="https://codedthemes.com"
+          class="cursor-pointer mx-md-3 mx-2 mb-md-0 mb-2 text-subtitle-2 text-lightText"
           target="_blank"
         >
           {{ item.title }}
