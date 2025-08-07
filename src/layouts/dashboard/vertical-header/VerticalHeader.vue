@@ -83,7 +83,7 @@ const customizer = useCustomizerStore();
       color="darkText"
       rounded="sm"
       variant="text"
-      href="https://github.com/codedthemes/mantis-free-vuetify-vuejs-admin-template"
+      href="https://github.com/themewagon/Mantis-Vue"
       target="_blank"
     >
       <GithubOutlined :style="{ fontSize: '16px' }" />
